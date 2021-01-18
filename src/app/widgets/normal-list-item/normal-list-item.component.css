@@ -1,10 +1,10 @@
-.normal_list {
+.normal_list_item {
   border-bottom: 1px dashed blue;
   height: 30px;
   display: flex;
 }
 
-.normal_list > div {
+.normal_list_item > div {
   line-height: 30px;
 }
 

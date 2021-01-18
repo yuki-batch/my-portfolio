@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {ItemStarListComponent} from './item-star-list.component';
+import {StarListItemComponent} from './star-list-item.component';
 
-describe('ItemStarListComponent', () => {
-  let component: ItemStarListComponent;
-  let fixture: ComponentFixture<ItemStarListComponent>;
+describe('StarListComponentItem', () => {
+  let component: StarListItemComponent;
+  let fixture: ComponentFixture<StarListItemComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ItemStarListComponent]
+      declarations: [StarListItemComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItemStarListComponent);
+    fixture = TestBed.createComponent(StarListItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

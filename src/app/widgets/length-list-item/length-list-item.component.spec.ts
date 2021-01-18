@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {ItemLengthListComponent} from './item-length-list.component';
+import {LengthListItemComponent} from './length-list-item.component';
 
-describe('ItemLengthListComponent', () => {
-  let component: ItemLengthListComponent;
-  let fixture: ComponentFixture<ItemLengthListComponent>;
+describe('LengthListItemComponent', () => {
+  let component: LengthListItemComponent;
+  let fixture: ComponentFixture<LengthListItemComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ItemLengthListComponent]
+      declarations: [LengthListItemComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItemLengthListComponent);
+    fixture = TestBed.createComponent(LengthListItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,10 +1,10 @@
-.item-length-list {
+.length-list-item {
   border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
 }
 
-.item-length-list > div {
+.length-list-item > div {
   line-height: 30px;
 }
 

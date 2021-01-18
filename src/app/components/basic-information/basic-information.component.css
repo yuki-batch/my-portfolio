@@ -1,0 +1,17 @@
+.basic_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basic_info > div {
+  flex-grow: 1;
+}
+
+.basic_info_img {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.basic_info_img > img {
+  width: 300px;
+}

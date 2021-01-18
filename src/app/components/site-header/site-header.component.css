@@ -1,5 +1,6 @@
 .site_header {
   width: 100%;
+  display: flex;
 }
 
 .site_header > div {

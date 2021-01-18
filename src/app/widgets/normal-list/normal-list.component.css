@@ -1,0 +1,26 @@
+.normal_list {
+  border-bottom: 1px dashed blue;
+  height: 30px;
+  display: flex;
+}
+
+.normal_list > div {
+  line-height: 30px;
+}
+
+.title {
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+.body {
+  flex-grow: 1;
+}
+.trailing {
+  width: 30px;
+}
+
+.trailing img {
+  width: 30px;
+  height: 30px;
+}

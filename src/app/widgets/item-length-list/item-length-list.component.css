@@ -24,7 +24,6 @@
   flex-grow: 1;
 }
 
-.trailing img {
-  width: 30px;
-  height: 30px;
+.length img {
+  height: 10px;
 }

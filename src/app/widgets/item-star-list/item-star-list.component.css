@@ -1,0 +1,29 @@
+.item-star-list {
+  border: 1px solid blue;
+  display: flex;
+  line-height: 30px;
+  flex-wrap: wrap;
+}
+
+.title {
+  width: 180px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.star_length {
+  flex-grow: 1;
+  height: 30px;
+  max-width: 120px;
+}
+
+.star_length > img {
+  padding: 5px 3px 0 0;
+  width: 18px;
+  height: 18px;
+}
+
+.star_comment {
+  padding: 0 8px;
+  font-size: 0.9em;
+}

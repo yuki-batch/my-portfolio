@@ -1,0 +1,30 @@
+.item-length-list {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-length-list > div {
+  line-height: 30px;
+}
+
+.title {
+  width: 180px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.term_text {
+  width: 120px;
+}
+
+.length {
+  min-width: 220px;
+  padding: 0 8px;
+  flex-grow: 1;
+}
+
+.trailing img {
+  width: 30px;
+  height: 30px;
+}

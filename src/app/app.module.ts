@@ -6,6 +6,9 @@ import {SiteHeaderComponent} from './components/site-header/site-header.componen
 import {BasicInformationComponent} from './components/basic-information/basic-information.component';
 import {NormalListComponent} from './widgets/normal-list/normal-list.component';
 import {AppRoutingModule} from './app-routing.module';
+import {SkillExperienceComponent} from './components/skill-experience/skill-experience.component';
+import {ItemLengthListComponent} from './widgets/item-length-list/item-length-list.component';
+import {ItemStarListComponent} from './widgets/item-star-list/item-star-list.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import {AppRoutingModule} from './app-routing.module';
     SiteHeaderComponent,
     BasicInformationComponent,
     NormalListComponent,
+    SkillExperienceComponent,
+    ItemLengthListComponent,
+    ItemStarListComponent,
   ],
   imports: [
     BrowserModule,

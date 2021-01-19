@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {SiteHeaderComponent} from './components/site-header/site-header.component';
+import {SiteHeaderComponent} from './widgets/site-header/site-header.component';
 import {BasicInformationComponent} from './components/basic-information/basic-information.component';
 import {NormalListItemComponent} from './widgets/normal-list-item/normal-list-item.component';
 import {AppRoutingModule} from './app-routing.module';

@@ -10,6 +10,7 @@ import {SkillExperienceComponent} from './components/skill-experience/skill-expe
 import {LengthListItemComponent} from './widgets/length-list-item/length-list-item.component';
 import {StarListItemComponent} from './widgets/star-list-item/star-list-item.component';
 import {CareerComponent} from './components/career/career.component';
+import {NormalListTableItemComponent} from './widgets/normal-list-table-item/normal-list-table-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {CareerComponent} from './components/career/career.component';
     LengthListItemComponent,
     StarListItemComponent,
     CareerComponent,
+    NormalListTableItemComponent,
   ],
   imports: [
     BrowserModule,

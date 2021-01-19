@@ -1,0 +1,25 @@
+.normal_list_table_item {
+  display: table;
+  border: 1px solid blue;
+  width: 100%;
+}
+
+.normal_list_table_item > div {
+  display: table-cell;
+  padding: 8px;
+}
+
+.table_title {
+  background-color: cornflowerblue;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table_body > span {
+  display: block;
+}
+
+.table_body > .title {
+  font-weight: bold;
+  color: #990000;
+}

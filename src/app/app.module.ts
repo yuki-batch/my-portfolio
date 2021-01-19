@@ -11,6 +11,7 @@ import {LengthListItemComponent} from './widgets/length-list-item/length-list-it
 import {StarListItemComponent} from './widgets/star-list-item/star-list-item.component';
 import {CareerComponent} from './components/career/career.component';
 import {NormalListTableItemComponent} from './widgets/normal-list-table-item/normal-list-table-item.component';
+import {SiteFooterComponent} from './widgets/site-footer/site-footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {NormalListTableItemComponent} from './widgets/normal-list-table-item/nor
     StarListItemComponent,
     CareerComponent,
     NormalListTableItemComponent,
+    SiteFooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  display: flex;
+  background-color: cornflowerblue;
+
+}
+
+.copy_right {
+  color: #ffffff;
+  margin: 0 auto;
+}

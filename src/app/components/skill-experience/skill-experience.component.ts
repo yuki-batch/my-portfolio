@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {ProgrammingExperience} from "../../entities/programming-experience";
+import {programingExperience} from '../../../mocks/mock-programing-experience'
 
 @Component({
   selector: 'app-skill-experience',
@@ -6,6 +8,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./skill-experience.component.css']
 })
 export class SkillExperienceComponent implements OnInit {
+
+  public programingExperience: ProgrammingExperience = programingExperience;
 
   constructor() {
   }

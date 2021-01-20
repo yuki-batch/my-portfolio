@@ -1,8 +1,7 @@
 <div class="content">
   <h2>スキルと経験</h2>
-  <app-length-list-item></app-length-list-item>
-  <app-length-list-item></app-length-list-item>
-  <app-length-list-item></app-length-list-item>
+  <app-skill-length-list-item *ngFor="let skill of programingExperience.skill" [skill]="skill">
+  </app-skill-length-list-item>
   <app-star-list-item></app-star-list-item>
 </div>
 

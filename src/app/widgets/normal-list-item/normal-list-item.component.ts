@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {NormalListItem} from '../../entities/normal-list-item';
 
 @Component({
   selector: 'app-normal-list-item',
@@ -7,10 +8,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class NormalListItemComponent implements OnInit {
 
+  @Input() item: NormalListItem;
+
   constructor() {
   }
 
   ngOnInit() {
+    console.log(this.item);
   }
 
 }

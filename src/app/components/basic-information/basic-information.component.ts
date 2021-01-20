@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {BasicInformation} from "../../entities/basic-information";
+import {basicInformation} from '../../../mocks/mock-basic-information'
 
 @Component({
   selector: 'app-basic-information',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicInformationComponent implements OnInit {
 
-  constructor() { }
+  public basicInformation: BasicInformation;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.basicInformation = basicInformation;
   }
 
 }

@@ -8,10 +8,10 @@
 }
 
 .basic_info_img {
-  flex-grow: 1;
+  flex-grow: 2;
   text-align: center;
 }
 
 .basic_info_img > img {
-  width: 300px;
+  width: 80%;
 }

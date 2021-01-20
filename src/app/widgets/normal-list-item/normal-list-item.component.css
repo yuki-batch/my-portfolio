@@ -1,21 +1,25 @@
 .normal_list_item {
   border-bottom: 1px dashed blue;
-  height: 30px;
   display: flex;
+  width: 380px;
+  font-size: 0.95em;
 }
 
 .normal_list_item > div {
   line-height: 30px;
+  white-space: pre-wrap;
 }
 
 .title {
-  width: 80px;
-  text-align: center;
+  min-width: 100px;
+  text-align: left;
   font-weight: bold;
 }
+
 .body {
   flex-grow: 1;
 }
+
 .trailing {
   width: 30px;
 }

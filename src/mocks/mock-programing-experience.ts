@@ -94,8 +94,8 @@ export const programingExperience: ProgrammingExperience = {
     },
     {
       "name": "Adobe XD",
-      "startTerm": "20",
-      "endTerm": "",
+      "startTerm": "2020/11/1",
+      "endTerm": "2020/12/1",
       "lebel": 1
     },
     {

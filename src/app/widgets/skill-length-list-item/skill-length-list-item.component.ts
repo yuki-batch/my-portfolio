@@ -10,16 +10,28 @@ import {Input} from '@angular/core';
 export class SkillLengthListItemComponent implements OnInit {
 
   @Input() skill: Program;
-  public experienceMonth: string
+  @Input() firstStartTerm: string;
+  public experienceMonth: number;
   public percentNumber: number;
 
   constructor() {
   }
 
   ngOnInit() {
-    // TODO: 経験の月数を計算と割合で算出
-    this.experienceMonth = '36ヵ月';
-    this.percentNumber = 100;
+    const startDate = new Date(this.skill.startTerm);
+    const endDate = !this.skill.endTerm ? new Date() : new Date(this.skill.endTerm);
+    this.experienceMonth = SkillLengthListItemComponent.monthDiff(startDate, endDate);
+    if (this.experienceMonth === 0) {
+      this.experienceMonth = 0.5;
+    }
+
+    const maxExperienceMonth = SkillLengthListItemComponent.monthDiff(new Date(this.firstStartTerm), new Date());
+    this.percentNumber = this.experienceMonth / maxExperienceMonth * 100;
+  }
+
+  private static monthDiff(dateFrom, dateTo) {
+    return dateTo.getMonth() - dateFrom.getMonth() +
+      (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
   }
 
 }

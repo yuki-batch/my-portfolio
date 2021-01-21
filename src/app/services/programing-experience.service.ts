@@ -4,6 +4,7 @@ import {SkillExperience} from "../entities/skill-experience";
 import {programingExperience} from '../../mocks/mock-programing-experience';
 import {SkillProficieny} from "../entities/skill-proficieny";
 import {Language} from "../entities/normal-list-item";
+import {ProgramingLanguage} from "../entities/programing-language";
 
 @Injectable({
   providedIn: 'root'
@@ -72,6 +73,59 @@ export class ProgramingExperienceService {
     }
 
     return message;
+  }
+
+  public programingLanguageList(): ProgramingLanguage[] {
+    return ProgramingExperienceService.programingExperience.skill.map((skill) => {
+      const programingLanguage = new ProgramingLanguage();
+      programingLanguage.name = skill.name;
+      programingLanguage.imgUrl = this.programingLanguageIcon(skill.name);
+      return programingLanguage;
+    });
+  }
+
+  public programingLanguageIcon(language: string): string {
+    switch (language) {
+      case 'Angular':
+        return "/assets/img/angular-icon.svg";
+      case 'TypeScript':
+        return "/assets/img/typescript-icon.svg";
+      case 'AngularJS':
+        return "/assets/img/angularjs-iconjpg.jpg";
+      case 'JavaScript':
+        return "/assets/img/javascript-icon.svg";
+      case 'Postgres SQL':
+        return "/assets/img/postgresql.svg";
+      case 'jQuery':
+        return "/assets/img/jquery.svg";
+      case 'Flutter':
+        return "/assets/img/flutter.svg";
+      case 'Firebase':
+        return "/assets/img/firebase.svg";
+      case 'PHP':
+        return "/assets/img/php.svg";
+      case 'CakePHP':
+        return "/assets/img/cakephp-icon.svg";
+      case 'HTML':
+        return "/assets/img/html-5.svg";
+      case 'CSS':
+        return "/assets/img/css-3.svg";
+      //  icon違う
+      case 'SCSS':
+        return "/assets/img/sass.svg";
+      case 'Vue.js':
+        return "/assets/img/vue.svg";
+      case 'Flutter for web':
+        return "/assets/img/flutter.svg";
+      case 'Adobe XD':
+        return "/assets/img/icon-xd.svg";
+      case 'C':
+        return "/assets/img/C_Programming_Language_logo.svg.png";
+      case 'Java':
+        return "/assets/img/java.svg";
+      case 'Node.js':
+        return "/assets/img/nodejs.svg";
+    }
   }
 
   private static monthDiff(dateFrom, dateTo) {

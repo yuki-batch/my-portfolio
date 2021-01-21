@@ -12,7 +12,8 @@ import {StarListItemComponent} from './widgets/star-list-item/star-list-item.com
 import {CareerComponent} from './components/career/career.component';
 import {NormalListTableItemComponent} from './widgets/normal-list-table-item/normal-list-table-item.component';
 import {SiteFooterComponent} from './widgets/site-footer/site-footer.component';
-import {SkillLengthListItemComponent} from './widgets/skill-length-list-item/skill-length-list-item.component';
+import {SkillLengthListItemComponent} from './widgets/skill-experience/skill-length-list-item/skill-length-list-item.component';
+import {SkillLengthListComponent} from './widgets/skill-experience/skill-length-list/skill-length-list.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {SkillLengthListItemComponent} from './widgets/skill-length-list-item/ski
     NormalListTableItemComponent,
     SiteFooterComponent,
     SkillLengthListItemComponent,
+    SkillLengthListComponent,
   ],
   imports: [
     BrowserModule,

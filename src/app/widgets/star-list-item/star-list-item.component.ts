@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {SkillProficieny} from "../../entities/skill-proficieny";
+import {ProgramingExperienceService} from "../../services/programing-experience.service";
 
 @Component({
   selector: 'app-star-list-item',
@@ -7,7 +9,16 @@ import {Component, OnInit} from '@angular/core';
 })
 export class StarListItemComponent implements OnInit {
 
-  constructor() {
+  @Input() skill: SkillProficieny
+
+  get skillMessage() {
+    return this.programingExperienceService.skillProficiencyComment(this.skill.skillLevel);
+  }
+
+  constructor(
+    private programingExperienceService: ProgramingExperienceService
+  ) {
+
   }
 
   ngOnInit() {

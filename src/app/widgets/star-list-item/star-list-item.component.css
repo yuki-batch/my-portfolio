@@ -26,4 +26,5 @@
 .star_comment {
   padding: 0 8px;
   font-size: 0.9em;
+  min-width: 170px;
 }

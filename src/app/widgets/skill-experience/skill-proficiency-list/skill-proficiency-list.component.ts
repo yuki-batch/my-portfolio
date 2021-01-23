@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {SkillProficieny} from "../../../entities/skill-proficieny";
 import {ProgramingExperienceService} from "../../../services/programing-experience.service";
+import {ProgramingLanguage} from "../../../entities/programing-language";
 
 @Component({
   selector: 'app-skill-proficiency-list',
@@ -9,6 +10,7 @@ import {ProgramingExperienceService} from "../../../services/programing-experien
 })
 export class SkillProficiencyListComponent implements OnInit {
 
+  @Input() selectLanguage: ProgramingLanguage[];
   public skillProficiency: SkillProficieny[];
 
   constructor(

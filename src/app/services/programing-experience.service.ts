@@ -4,7 +4,6 @@ import {SkillExperience} from "../entities/skill-experience";
 import {programingExperience} from '../../mocks/mock-programing-experience';
 import {SkillProficieny} from "../entities/skill-proficieny";
 import {Language} from "../entities/normal-list-item";
-import {ProgramingLanguage} from "../entities/programing-language";
 
 @Injectable({
   providedIn: 'root'
@@ -75,12 +74,9 @@ export class ProgramingExperienceService {
     return message;
   }
 
-  public programingLanguageList(): ProgramingLanguage[] {
+  public programingLanguageList(): string[] {
     return ProgramingExperienceService.programingExperience.skill.map((skill) => {
-      const programingLanguage = new ProgramingLanguage();
-      programingLanguage.name = skill.name;
-      programingLanguage.imgUrl = this.programingLanguageIcon(skill.name);
-      return programingLanguage;
+      return skill.name;
     });
   }
 

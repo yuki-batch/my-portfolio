@@ -1,11 +1,9 @@
 <div class="content">
   <h2>スキルと経験</h2>
   <div class="select_skill">
-    <div *ngFor="let lang of programingLanguageList" class="skill_item"
-         [class.inactive]="selectLanguage.indexOf(lang) !== -1" (click)="onClickLanguage(lang)">
-      <img [src]="lang.imgUrl" [alt]="lang.name">
-      {{lang.name}}
-    </div>
+    <app-select-skill-list-item *ngFor="let lang of programingLanguageList" [language]="lang" class="skill_item"
+                                [class.inactive]="selectLanguage.indexOf(lang) === -1"
+                                (click)="onClickLanguage(lang)"></app-select-skill-list-item>
   </div>
   <app-skill-length-list [selectLanguage]="selectLanguage"></app-skill-length-list>
   <app-skill-proficiency-list [selectLanguage]="selectLanguage"></app-skill-proficiency-list>

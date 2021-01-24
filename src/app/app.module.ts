@@ -15,6 +15,7 @@ import {SiteFooterComponent} from './widgets/site-footer/site-footer.component';
 import {SkillLengthListItemComponent} from './widgets/skill-experience/skill-length-list-item/skill-length-list-item.component';
 import {SkillLengthListComponent} from './widgets/skill-experience/skill-length-list/skill-length-list.component';
 import {SkillProficiencyListComponent} from './widgets/skill-experience/skill-proficiency-list/skill-proficiency-list.component';
+import {SelectSkillListItemComponent} from './widgets/skill-experience/select-skill-list-item/select-skill-list-item.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {SkillProficiencyListComponent} from './widgets/skill-experience/skill-pr
     SkillLengthListItemComponent,
     SkillLengthListComponent,
     SkillProficiencyListComponent,
+    SelectSkillListItemComponent,
   ],
   imports: [
     BrowserModule,

@@ -29,7 +29,6 @@ export class SkillExperienceComponent implements OnInit {
     } else {
       this.selectLanguage.splice(indexNum, 1)
     }
-    console.log(this.selectLanguage);
   }
 
 }

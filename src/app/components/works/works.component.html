@@ -1,7 +1,7 @@
 <div class="content">
-  <app-normal-list-table-item [leftSideTitle]=""
-                              [title]="'ポートフォリオサイト'"
-                              [body]="'現在ご覧頂いているポートフォリオサイトです。'"
-                              [detail]="'Angular, HTML, CSS'"
+  <app-normal-list-table-item *ngFor="let work of works" [leftSideTitle]="work.leftSideTitle"
+                              [title]="work.title"
+                              [body]="work.body"
+                              [detail]="work.detail"
   ></app-normal-list-table-item>
 </div>

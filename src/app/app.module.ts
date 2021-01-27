@@ -16,6 +16,7 @@ import {SkillLengthListItemComponent} from './widgets/skill-experience/skill-len
 import {SkillLengthListComponent} from './widgets/skill-experience/skill-length-list/skill-length-list.component';
 import {SkillProficiencyListComponent} from './widgets/skill-experience/skill-proficiency-list/skill-proficiency-list.component';
 import {SelectSkillListItemComponent} from './widgets/skill-experience/select-skill-list-item/select-skill-list-item.component';
+import {WorksComponent} from './components/works/works.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {SelectSkillListItemComponent} from './widgets/skill-experience/select-sk
     SkillLengthListComponent,
     SkillProficiencyListComponent,
     SelectSkillListItemComponent,
+    WorksComponent,
   ],
   imports: [
     BrowserModule,

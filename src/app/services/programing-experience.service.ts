@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
-import {ProgrammingExperience, skillLevel} from "../entities/programming-experience";
-import {SkillExperience} from "../entities/skill-experience";
+import {ProgrammingExperience, skillLevel} from '../entities/programming-experience';
+import {SkillExperience} from '../entities/skill-experience';
 import {programingExperience} from '../../mocks/mock-programing-experience';
-import {SkillProficieny} from "../entities/skill-proficieny";
-import {Language} from "../entities/normal-list-item";
+import {SkillProficieny} from '../entities/skill-proficieny';
+import {Language} from '../entities/normal-list-item';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,11 @@ export class ProgramingExperienceService {
 
   private static programingExperience: ProgrammingExperience = programingExperience;
 
+
+  private static monthDiff(dateFrom, dateTo) {
+    return dateTo.getMonth() - dateFrom.getMonth() +
+      (12 * (dateTo.getFullYear() - dateFrom.getFullYear()));
+  }
 
   public convertSkillExperience(): SkillExperience[] {
     return ProgramingExperienceService.programingExperience.skill.map((skill) => {
@@ -42,12 +47,12 @@ export class ProgramingExperienceService {
       skillItem.skillName = skill.name;
       skillItem.skillLevel = skill.level;
       return skillItem;
-    })
+    });
   }
 
-  public skillProficiencyComment(skillLevel: skillLevel): Language {
+  public skillProficiencyComment(skillLevelNumber: skillLevel): Language {
     const message = new Language();
-    switch (skillLevel) {
+    switch (skillLevelNumber) {
       case 1:
         message.ja = '触ったことがある';
         message.en = 'I\'ve touched it before';
@@ -83,49 +88,44 @@ export class ProgramingExperienceService {
   public programingLanguageIcon(language: string): string {
     switch (language) {
       case 'Angular':
-        return "./assets/img/angular-icon.svg";
+        return './assets/img/angular-icon.svg';
       case 'TypeScript':
-        return "./assets/img/typescript-icon.svg";
+        return './assets/img/typescript-icon.svg';
       case 'AngularJS':
-        return "./assets/img/angularjs-iconjpg.jpg";
+        return './assets/img/angularjs-iconjpg.jpg';
       case 'JavaScript':
-        return "./assets/img/javascript-icon.svg";
+        return './assets/img/javascript-icon.svg';
       case 'Postgres SQL':
-        return "./assets/img/postgresql.svg";
+        return './assets/img/postgresql.svg';
       case 'jQuery':
-        return "./assets/img/jquery.svg";
+        return './assets/img/jquery.svg';
       case 'Flutter':
-        return "./assets/img/flutter.svg";
+        return './assets/img/flutter.svg';
       case 'Firebase':
-        return "./assets/img/firebase.svg";
+        return './assets/img/firebase.svg';
       case 'PHP':
-        return "./assets/img/php.svg";
+        return './assets/img/php.svg';
       case 'CakePHP':
-        return "./assets/img/cakephp-icon.svg";
+        return './assets/img/cakephp-icon.svg';
       case 'HTML':
-        return "./assets/img/html-5.svg";
+        return './assets/img/html-5.svg';
       case 'CSS':
-        return "./assets/img/css-3.svg";
+        return './assets/img/css-3.svg';
       //  icon違う
       case 'SCSS':
-        return "./assets/img/sass.svg";
+        return './assets/img/sass.svg';
       case 'Vue.js':
-        return "./assets/img/vue.svg";
+        return './assets/img/vue.svg';
       case 'Flutter for web':
-        return "./assets/img/flutter.svg";
+        return './assets/img/flutter.svg';
       case 'Adobe XD':
-        return "./assets/img/icon-xd.svg";
+        return './assets/img/icon-xd.svg';
       case 'C':
-        return "./assets/img/C_Programming_Language_logo.svg.png";
+        return './assets/img/C_Programming_Language_logo.svg.png';
       case 'Java':
-        return "./assets/img/java.svg";
+        return './assets/img/java.svg';
       case 'Node.js':
-        return "./assets/img/nodejs.svg";
+        return './assets/img/nodejs.svg';
     }
-  }
-
-  private static monthDiff(dateFrom, dateTo) {
-    return dateTo.getMonth() - dateFrom.getMonth() +
-      (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
   }
 }

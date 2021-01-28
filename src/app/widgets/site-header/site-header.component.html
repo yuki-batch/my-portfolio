@@ -1,8 +1,8 @@
 <div class="site_header">
   <div class="header_title">Yahaba's Porfolio</div>
   <div class="header_menu_toggle" (click)="onClickMenuButton()">
-    <img *ngIf="isMenuOpen" src="../../../assets/img/white_close_icon.svg" alt="クローズボタン">
-    <img *ngIf="!isMenuOpen" src="../../../assets/img/toggle_menu_icon.svg" alt="メニューボタン">
+    <img *ngIf="isMenuOpen" src="./assets/img/white_close_icon.svg" alt="クローズボタン">
+    <img *ngIf="!isMenuOpen" src="./assets/img/toggle_menu_icon.svg" alt="メニューボタン">
   </div>
   <div class="header_menu" [class.is_open]="isMenuOpen">
     <div class="header_menu_item"><a routerLink="/basic-information">基本情報</a></div>

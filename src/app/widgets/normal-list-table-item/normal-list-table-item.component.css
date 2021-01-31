@@ -1,5 +1,6 @@
 .normal_list_table_item {
   display: table;
+  margin: -1px 0 0 0;
   border: 1px solid blue;
   width: 100%;
 }

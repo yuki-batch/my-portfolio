@@ -6,6 +6,10 @@
   margin: -1px 0 0 0;
 }
 
+.star-list-item:hover {
+  background-color: #e6f7ff;
+}
+
 .title {
   width: 180px;
   text-align: center;

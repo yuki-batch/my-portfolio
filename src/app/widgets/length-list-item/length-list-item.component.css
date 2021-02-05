@@ -5,6 +5,10 @@
   flex-wrap: wrap;
 }
 
+.length-list-item:hover {
+  background-color: #e6f7ff;
+}
+
 .length-list-item > div {
   line-height: 30px;
 }

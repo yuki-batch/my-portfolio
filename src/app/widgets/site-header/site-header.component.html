@@ -1,12 +1,12 @@
 <div class="site_header">
-  <div class="header_title">Yahaba's Porfolio</div>
+  <div class="header_title"><a routerLink="/">Yahaba's Porfolio</a></div>
   <div class="header_menu_toggle" (click)="onClickMenuButton()">
     <img *ngIf="isMenuOpen" src="./assets/img/white_close_icon.svg" alt="クローズボタン">
     <img *ngIf="!isMenuOpen" src="./assets/img/toggle_menu_icon.svg" alt="メニューボタン">
   </div>
   <div class="header_menu" [class.is_open]="isMenuOpen">
-    <div class="header_menu_item"><a routerLink="/basic-information">基本情報</a></div>
-    <div class="header_menu_item"><a routerLink="/skill-experience">スキル・経験</a></div>
-    <div class="header_menu_item"><a routerLink="/works">作品一覧</a></div>
+    <div class="header_menu_item"><a routerLink="/basic-information" routerLinkActive="active">基本情報</a></div>
+    <div class="header_menu_item"><a routerLink="/skill-experience" routerLinkActive="active">スキル・経験</a></div>
+    <div class="header_menu_item"><a routerLink="/works" routerLinkActive="active">作品一覧</a></div>
   </div>
 </div>
